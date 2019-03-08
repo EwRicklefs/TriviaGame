@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="jumbotron" id='banner'> 
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <h1 class='display-4' >Trivia!</h1>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mt-3">
+                    <button type="button" class="btn btn-primary" id='start'>Start</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+
+        <div class="jumbotron toShow" id='quizBoard'> 
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-3">
+                    <h2 id="timeRem">01:00</h2>
+                </div>  
+            </div>
+            <div class="row" id='questions1'>
+                <div class="col-md-4 " id="q1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>The capital of Lybya is Benghazi</p>
+                            <input type="checkbox" id="q1t" name="q1[]" value="True">True<br>
+                            <input type="checkbox" id="q1f" name="q1[]" value="False">False<br>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4" id="q2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Albert Einstein was awarded the Nobel Prize in Physics</p>
+                            <input type="checkbox" id="q2t" name="q2[]" value="True">True<br>
+                            <input type="checkbox" id="q2f" name="q2[]" value="False">False<br>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4" id="q3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Baby koalas are called joeys</p>
+                            <input type="checkbox" id="q3t" name="q3[]" value="True">True<br>
+                            <input type="checkbox" id="q3f" name="q3[]" value="False">False<br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="row" id='questions2'>
+                <div class="col-md-4" id="q4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Gone with the Wind takes place in Savannah, Georgia</p>
+                            <input type="checkbox" id="q4t" name="q4[]" value="True">True<br>
+                            <input type="checkbox" id="q4f" name="q4[]" value="False">False<br>                         
+                        </div>
+                    </div>                     
+                </div>
+                <div class="col-md-4" id="q5">
+                    <div class="card">
+                        <div class="card-body">
+                                <p>Brazil is the only country in the Americas whose official language is Portugese</p>
+                                <input type="checkbox" id="q5t" name="q5[]" value="True">True<br>
+                                <input type="checkbox" id="q5f" name="q5[]" value="False">False<br>                             
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4" id="q6">
+                    <div class="card">
+                        <div class="card-body">
+                                <p>The first name of Kramer in Seinfeld is Cosmo</p>
+                                <input type="checkbox" id="q6t" name="q6[]" value="True">True<br>
+                                <input type="checkbox" id="q6f" name="q6[]" value="False">False<br>                             
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row" id='questions3'>
+                <div class="col-md-4" id="q7">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>The American Civil war ended in 1776</p>
+                            <input type="checkbox" id="q7t" name="q7[]" value="True">True<br>
+                            <input type="checkbox" id="q7f" name="q7[]" value="False">False<br>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="q8">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>A right triangle can never be equilateral</p>
+                            <input type="checkbox" id="q8t" name="q8[]" value="True">True<br>
+                            <input type="checkbox" id="q8f" name="q8[]" value="False">False<br>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="q9">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>The Ford Edsel was named after Henry Ford's father</p>
+                            <input type="checkbox" id="q9t" name="q9[]" value="True">True<br>
+                            <input type="checkbox" id="q9f" name="q9[]" value="False">False<br>                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-info" id='submit'>Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron toShow" id="results">
+            <div class="row pb-5">
+                <div class="col-md-1"></div>
+                <h1 class='display-4'>Results</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Correct Answers: <span id="corr"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p>Incorrect Answers: <span id="incorr"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p>% : <span id="percent"></span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <button type="button" class="btn btn-primary" id='restart'>Restart</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
